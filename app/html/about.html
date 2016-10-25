@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tacos Chukis</title>
+  <script src="bundle.js"></script>
+  <link rel="stylesheet" href="bundle.css">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2:extra-bold|Lato:light" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="index.html"><img class="logo-text" src="../app/resources/logo-text-white.svg" /></a>
+      </li><!--
+      --><li><a href="menu.html">MENU</a></li><!--
+      --><li><a href="about.html">ABOUT</a></li><!--
+      --><li><a href="press.html">PRESS</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="about-feature">
+      <div class="about-billboard">
+        <!-- <div class="featured-item">
+              <h1 class="menu-item">HOUSE TACO</h1>
+              <p class="description">
+                An adobada pork taco with melted cheese, guacamole and grilled pineapple.
+              </p>
+            </div> -->
+      </div>
+    </div>
+    <div class="article-divider">
+      <h1>A TACO LOVE STORY, SEPARATED BY 1,700 MILES.</h1>
+    </div>
+    <article class="about-content">
+      <!-- <div class="storyline"> -->
+      <img src="../app/resources/roberto.jpg" alt="Roberto, the founder of Tacos Chukis, holding plates of delicious food." />
+      <h2>HOW A BICYCLE TRIP TURNED INTO THE BEST TACOS IN SEATTLE</h2>
+      <p>
+        Roberto Salmerón had done it--he'd graduated from the University of Washington. But that accomplishment was swiftly brushed aside by the burning question: "What now?"
+      </p>
+      <p>
+        It's a question that many recent grads ask themselves. And to help discern his future, Roberto--like many recent grads--returned to his past. To be more precise, he embarked on an epic, 1,700-mile bicycle journey to his hometown of Tijuana, Mexico.
+      </p>
+      <p>
+        Immediately upon arriving home, his family welcomed him with open arms, beaming smiles, and tacos. Roberto had discovered the answer to the question of "What now?" In all his time in Seattle, he'd never been able to find the delicious taqueria fare he
+        had grown up with and he, wisely, mused that if he loved this food so much, so would others.
+      </p>
+      <p>
+        Roberto started Tacos Chukis in 2011 and it has been on a journey of its ever own since, unhaltingly working its way into the hearts (and bellies) of Seattleites. Tucked away in a modern-day hole-in-the-wall in Capitol Hill, Tacos Chukis has become many
+        people's secret spot to satisfy their taco cravings.
+      </p>
+      <!-- </div> -->
+    </article>
+    <div class="article-divider">
+      <h2>COMING SOON, NEW LOCATION IN SOUTH LAKE UNION!</h2>
+    </div>
+    <article class="locations">
+      <section class="map-capitol-hill">
+        <div class="capitol-hill-info">
+          <h3>CAPITOL HILL</h3>
+          <p>
+            219 Broadway E
+            <br/> Seattle, WA, 98102
+          </p>
+        </div>
+        <div id="map-capitol-hill">
+        </div>
+      </section>
+      <section class="map-south-lake-union">
+        <div class="south-lake-union-info">
+
+          <h3>SOUTH LAKE UNION</h3>
+          <p>
+            810 Dexter Ave N
+            <br/> Seattle, WA, 98109
+          </p>
+        </div>
+
+        <div id="map-south-lake-union">
+        </div>
+      </section>
+    </article>
+
+  </main>
+  <footer>
+    <div class="footer-overlay">
+      <section class="social">
+        <h2>FOLLOW US</h2>
+        <p>
+          Check out the awesome things that awesome people are saying about us!
+        </p>
+        <ul>
+          <li>
+            <a class="fa fa-facebook" href="https://www.facebook.com/TacosChukis/"></a>
+          </li>
+          <li>
+            <a class="fa fa-twitter" href="https://twitter.com/tacoschukis"></a>
+          </li>
+          <li>
+            <a class="fa fa-instagram" href="https://www.instagram.com/tacoschukis/"></a>
+          </li>
+          <li>
+            <a class="fa fa-yelp" href="https://www.yelp.com/biz/tacos-chukis-seattle"></a>
+          </li>
+        </ul>
+      </section>
+      <section class="contact">
+        <div>
+          <h2>CONTACT US</h2>
+        </div>
+        <ul>
+          <div>
+            <span class="icon fa-map-marker"></span>
+            <li> 219 Broadway E
+              <br/>Seattle, WA 98102</li>
+          </div>
+          <div>
+            <span class="icon fa-phone"></span>
+            <li> (206) 328-4447</li>
+          </div>
+          <div>
+            <span class="icon fa-envelope-o"></span>
+            <li> info@tacoschukis.com</li>
+          </div>
+        </ul>
+      </section>
+      <section class="hours">
+        <h2>HOURS</h2>
+        <ul>
+          <li>11:30 am - 9 pm Daily</li>
+        </ul>
+      </section>
+    </div>
+    <div class="copyright">
+      Copyright <span class="fa fa-copyright"></span> 2016 Tacos Chukis All Rights Reserved.
+    </div>
+  </footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCi154L2uw_QTf_m0GycTQeMxxMxNd_Az4&callback=initMaps" async defer></script>
+<script src="../app/scripts/app.js"></script>
+<script src="../app/scripts/maps.js"></script>
+
+</html>

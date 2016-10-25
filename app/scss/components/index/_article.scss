@@ -1,0 +1,21 @@
+.tijuana {
+  position: relative;
+    margin: 3em;
+    img {
+        float: left;
+        width: 20em;
+        // margin-bottom: 100%;
+    }
+    .storyline{
+        position: relative;
+        top: 2.25vw;
+        left: 3em;
+        margin-right: 3em;
+        h2 {
+            color: $chukis-green;
+        }
+        p{
+          margin: 0;
+        }
+    }
+}

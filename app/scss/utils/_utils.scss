@@ -1,0 +1,19 @@
+@mixin top-indent{
+  position: relative;
+  top: 3.95em;
+}
+
+@mixin article-divider{
+  .article-divider{
+    width: 100%;
+    display: table;
+    h1, h2 {
+        display: table-cell;
+        vertical-align: middle;
+        height: 2.5em;
+        color: $light;
+        background-color: $chukis-green;
+        text-align: center;
+    }
+  }
+}

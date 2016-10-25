@@ -1,0 +1,44 @@
+nav{
+  background-color: $chukis-green;
+  height: 3.95em;
+  width: 100%;
+  display: inline-block;
+  position: fixed;
+  box-shadow: 0em 0em 1.5em .1em black;
+  z-index: 3;
+  ul{
+    padding: 0;
+  }
+  ul, li{
+      list-style-type: none;
+      color: $light;
+      display: inline;
+      position: relative;
+      top: .5em;
+      font-weight: bold;
+      font-size: 14pt;
+  a{
+    padding: .625em;
+    padding-bottom: .75em;
+    padding-top: 1.35em;
+    color: #ebfff1;
+    text-decoration: none;
+    transition: background 0.2s linear 0s, color 0.2s linear 0s;
+    img{
+      height: 20pt;
+      padding-left: .2em;
+      padding-right: .75em;
+    }
+  }
+  a:hover{
+    background-color: $light;
+    color: $chukis-green;
+    cursor: pointer;
+  }
+  a:active{
+    background-color: $light;
+    color: $chukis-green-active;
+    transition: background 0s linear 0s;
+  }
+}
+}

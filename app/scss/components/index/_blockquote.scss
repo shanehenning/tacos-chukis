@@ -1,0 +1,19 @@
+blockquote {
+    opacity: 0.9;
+    max-width: 80%;
+    position: absolute;
+    bottom: 3em;
+    margin: 0 auto;
+    display: inline-block;
+    font-family: $font-title;
+    color: $light;
+    text-shadow: 0.1em 0.1em 0.25em black;
+    .quote {
+        font-size: 16pt;
+    }
+    cite {
+        float: right;
+        margin-right: 1em;
+        font-size: 10pt;
+    }
+}

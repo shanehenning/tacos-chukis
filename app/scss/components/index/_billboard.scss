@@ -1,0 +1,18 @@
+.billboard {
+    margin: 0;
+    background-image: url("../../app/resources/billboard.jpg");
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 3.95em);
+    text-align: center;
+    img {
+        width: 650px;
+        text-shadow: 1em 1em 25em black;
+        position: relative;
+        top: 16vh;
+        opacity: 0.9;
+        display: block;
+        margin: 0 auto;
+    }
+    @import "./_blockquote.scss";
+}

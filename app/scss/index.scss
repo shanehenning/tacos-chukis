@@ -1,0 +1,17 @@
+@import "./vendor/normalize/_normalize.scss";
+@import "./vendor/font-awesome/scss/font-awesome.scss";
+@include normalize();
+
+@import "./utils/_utils.scss";
+@import "./utils/_icons.scss";
+@import "./theme/_theme.scss";
+
+@import "./base/_base.scss";
+@import "./components/_nav.scss";
+@import "./components/index/_main-index.scss";
+@import "./components/_footer.scss";
+
+@import "./components/_menu.scss";
+@import "./components/_about.scss";
+@import "./components/_maps.scss";
+@import "./components/_press.scss";
