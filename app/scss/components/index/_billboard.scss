@@ -5,9 +5,9 @@
     background-position: center;
     height: calc(100vh - 3.95em);
     text-align: center;
+    position: relative;
     img {
         width: 650px;
-        text-shadow: 1em 1em 25em black;
         position: relative;
         top: 16vh;
         opacity: 0.9;
