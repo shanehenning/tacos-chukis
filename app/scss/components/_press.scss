@@ -1,38 +1,29 @@
 @import "../components/index/_blockquote.scss";
-blockquote{
-  bottom: 1em;
-}
-
-.press-content {
-    margin: 3em;
-    h2 {
-        color: $chukis-green;
-    }
+blockquote {
+    bottom: 1em;
 }
 .press-references {
     margin: 1.5em;
     ul {
-      display: flex;
+        display: flex;
         padding: 0;
         list-style-type: none;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
-
         a {
             text-decoration: none;
             display: block;
             height: 100%;
             width: 100%;
-
         }
         li {
-          width: 380px;
-          background-color: $light;
-          text-align: center;
-          border: 1px solid $light-shadow;
-          margin: 1.5em;
-          height: 270px;
+            width: 380px;
+            background-color: $light;
+            text-align: center;
+            border: 1px solid $light-shadow;
+            margin: 1.5em;
+            height: 270px;
             .press-logo {
                 display: inline-block;
                 margin-top: 1.5em;
@@ -49,7 +40,7 @@ blockquote{
             }
             p {
                 margin-bottom: 1.5em;
-                color: black;
+                color: $dark;
             }
         }
     }

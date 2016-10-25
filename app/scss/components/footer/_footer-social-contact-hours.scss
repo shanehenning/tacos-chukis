@@ -1,0 +1,48 @@
+.social {
+    li {
+        display: inline;
+        position: relative;
+        margin-right: 0.2em;
+        line-height: 38pt;
+        a {
+            color: $light;
+            border: 2px solid $light;
+            width: 2em;
+            height: 2em;
+            line-height: 28pt;
+            text-align: center;
+            margin: 0 auto;
+            border-radius: 50%;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        a:hover {
+            background-color: $light;
+            color: $chukis-green;
+        }
+        a:active {
+            transition: 0s;
+            border: 2px solid $chukis-green;
+            color: $chukis-green-active;
+        }
+    }
+}
+.contact {
+    div {
+        margin-bottom: 2em;
+        ul span {
+            font-size: 24pt;
+            vertical-align: sub;
+        }
+        .fa-map-marker {
+            font-size: 28pt;
+            vertical-align: text-bottom;
+        }
+        li {
+            display: inline-block;
+        }
+    }
+}
+.hours {
+    margin-bottom: 2em;
+}

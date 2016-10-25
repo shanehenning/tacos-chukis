@@ -1,0 +1,29 @@
+.locations {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    section {
+        width: 620px;
+        background-color: $light;
+        text-align: center;
+        border: 1px solid $light-shadow;
+        margin: 1.5em;
+        .capitol-hill-info,
+        .south-lake-union-info {
+            margin-top: 11%;
+            float: left;
+            text-align: center;
+            width: 220px;
+            h3 {
+                color: $chukis-green;
+                padding-top: 0.25em;
+            }
+            p {
+                padding-right: 0.5em;
+            }
+        }
+    }
+}

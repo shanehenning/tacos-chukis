@@ -1,0 +1,28 @@
+.preview {
+    margin-top: 3em;
+    text-align: center;
+    ul {
+        color: $chukis-green;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 1em;
+    }
+    ul li {
+        display: inline-block;
+        width: 7.5em;
+        cursor: pointer;
+        img {
+            clear: both;
+            border: 1px solid $light-shadow;
+        }
+        div {
+            display: inline;
+            text-align: center;
+        }
+    }
+    ul li:hover {
+        img {
+            opacity: 0.8;
+        }
+    }
+}

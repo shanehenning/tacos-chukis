@@ -1,0 +1,32 @@
+.beverages, .fillings {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    section {
+        width: 400px;
+        height: 140px;
+        background-color: $light;
+        text-align: center;
+        border: 1px solid $light-shadow;
+        margin: 1.5em;
+        h3 {
+            color: $chukis-green;
+            padding-top: 0.25em;
+        }
+        p {
+            padding-right: 0.5em;
+        }
+        div {
+            float: left;
+            max-width: 11.75em;
+            width: 100%;
+            padding-bottom: calc((11.75em) * .75);
+            padding-right: 0.5em;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}

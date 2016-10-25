@@ -1,0 +1,32 @@
+.footer-overlay {
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 1em;
+    text-align: center;
+    overflow: auto;
+    z-index: 2;
+    background-color: rgba(0,147,65,.8);
+    color: $light;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    section {
+        margin-top: 3em;
+        width: 30%;
+        max-width: 30%;
+        min-width: 15em;
+        h2 {
+            margin: 0;
+        }
+        li, p, ul {
+            padding: 0;
+            list-style-type: none;
+            font-family: $font-body;
+            font-size: 14pt;
+        }
+    }
+    @import "./_footer-social-contact-hours.scss";
+}

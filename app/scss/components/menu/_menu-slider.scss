@@ -1,0 +1,19 @@
+@import "./_menu-slider-adjacents.scss";
+.slider {
+    .slides {
+        width: 800vw;
+        height: 58.5vh;
+        margin: 0;
+        padding: 0;
+        .slide {
+            float: left;
+            list-style-type: none;
+            width: 100vw;
+            background-size: cover;
+            background-position: center;
+            height: 58.5vh;
+            position: relative;
+        }
+    }
+    @import "./_menu-slider-descriptions.scss";
+}
