@@ -61,5 +61,11 @@ $(document).ready(function() {
     });
   }
 
+  $(window).resize(function() {
+    $('.slides').slick('resize');
+  });
 
+  $(window).on('orientationchange', function() {
+    $('.slides').slick('resize');
+  });
 });
