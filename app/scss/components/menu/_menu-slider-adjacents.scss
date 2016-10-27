@@ -2,12 +2,12 @@
 .flip-right {
     opacity: 0.6;
     position: absolute;
-    top: 24vh;
+    top: 20vh;
     height: 54px;
     width: 28px;
     cursor: pointer;
     z-index: 2;
-    button {
+    icon {
         color: $chukis-green;
         position: relative;
         top: 35%;
@@ -30,7 +30,4 @@
 .flip-left:hover,
 .flip-right:hover {
     opacity: 0.75;
-    button {
-        color: $chukis-green;
-    }
 }

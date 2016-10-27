@@ -1,9 +1,38 @@
-.menu-display {
-    overflow: hidden;
-    position: relative;
+.above-the-fold{
+      height: 100vh;
+
+  .menu-display {
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+      @import "./_menu-slider.scss";
+  }
+  @import "./_menu-preview.scss";
+
+  .dots{
+    display: none;
     text-align: center;
-    @import "./_menu-slider.scss";
+  }
+
+  @media only screen and (max-width : 1155px) {
+    .dots{
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      list-style-type: none;
+      li{
+        opacity: .5;
+        background-color: $chukis-green;
+        margin: .25em;
+        padding: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 8px;
+        margin-bottom: 1.5em;
+      }
+    }
+  }
+
 }
-@import "./_menu-preview.scss";
 @include article-divider;
 @import "./_menu-beverages-and-fillings.scss";
