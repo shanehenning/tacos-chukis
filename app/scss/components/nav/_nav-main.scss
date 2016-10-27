@@ -1,0 +1,65 @@
+nav {
+    background-color: $chukis-green;
+    height: 3.95em;
+    width: 100%;
+    display: inline-block;
+    position: fixed;
+    box-shadow: 0 0 1.5em 0.1em black;
+    z-index: 3;
+    text-align: center;
+    ul {
+        padding: 0;
+    }
+    li,
+    ul {
+        list-style-type: none;
+        color: $light;
+        display: inline;
+        position: relative;
+        top: -0.6em;
+        font-weight: bold;
+        font-size: 14pt;
+        a{
+          color: #ebfff1;
+          text-decoration: none;
+          transition: background 0.2s linear 0s, color 0.2s linear 0s;
+        }
+        a:not(.logo) {
+            position: relative;
+            top:.05em;
+            padding: 1.75em 0.625em 1em;
+        }
+        .logo{
+          position: relative;
+          top: 1.2em;
+          background-image: url("../../app/resources/logo-text-white.svg");
+          max-height: 16pt;
+          display: inline-block;
+          background-repeat: no-repeat;
+          background-size: 250px;
+          background-position: center;
+          padding: 0;
+          width: 250px;
+          height: 100px;
+        }
+        li .logo{
+          padding: 1.5em 1em .8em 1em;
+        }
+        .logo:hover{
+          background-image: url("../../app/resources/logo-text-green.svg");
+          cursor: pointer;
+        }
+        a:hover {
+            background-color: $light;
+            color: $chukis-green;
+            cursor: pointer;
+        }
+        a:active {
+            background-color: $light;
+            color: $chukis-green-active;
+            transition: background 0s linear 0s;
+        }
+    }
+}
+
+@import "./_nav-mobile.scss";
