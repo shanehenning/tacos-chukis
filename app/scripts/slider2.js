@@ -4,6 +4,8 @@ $(document).ready(function() {
   const flipLeft = $('.flip-left');
   const flipRight = $('.flip-right');
   const dotsStyle = $('.dot');
+  const miniLeft = $('.mini-nav .fa-chevron-left');
+  const miniRight = $('.mini-nav .fa-chevron-right');
 
   slide();
   asNav();
@@ -16,28 +18,27 @@ $(document).ready(function() {
       nextArrow: flipRight,
       focusOnSelect: true,
       asNavFor: preview,
-      infinite: false
+      infinite: true
     });
   }
 
   function asNav() {
     preview.slick({
       focusOnSelect: true,
-      slidesToShow: 4,
+      slidesToShow: 1,
       slidesToScroll: 1,
       asNavFor: slider,
-      infinite: false,
-      vertical: false,
+      prevArrow: miniLeft,
+      nextArrow: miniRight,
+      infinite: true,
+      variableWidth: true,
+      centerMode: true,
       responsive: [{
-        breakpoint: 1024,
+        breakpoint: 800,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true,
-          dotsClass: dotsStyle,
-          appendDots: dotsStyle,
-          vertical: false
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true
         }
       }, {
         breakpoint: 600,

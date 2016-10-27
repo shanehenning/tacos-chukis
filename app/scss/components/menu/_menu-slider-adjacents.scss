@@ -7,7 +7,7 @@
     width: 28px;
     cursor: pointer;
     z-index: 2;
-    span {
+    icon {
         color: $chukis-green;
         position: relative;
         top: 35%;
@@ -26,7 +26,4 @@
 .flip-left:hover,
 .flip-right:hover {
     opacity: 0.75;
-    span {
-        color: $chukis-green;
-    }
 }

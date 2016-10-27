@@ -1,3 +1,14 @@
+@import "../components/menu/_menu-slider-adjacents";
+@import "../components/menu/_menu-slider.scss";
+.slider{
+  overflow: hidden;
+  .slides{
+    .slide{
+    }
+    margin: 0;
+  }
+}
+
 @import "../components/index/_blockquote.scss";
 blockquote {
     bottom: 1em;
@@ -23,7 +34,7 @@ blockquote {
             text-align: center;
             border: 1px solid $light-shadow;
             margin: 1.5em;
-            height: 270px;
+            min-height: 270px;
             .press-logo {
                 display: inline-block;
                 margin-top: 1.5em;
@@ -32,6 +43,11 @@ blockquote {
                 background-repeat: no-repeat;
                 width: 200px;
                 height: 100px;
+
+                @media screen and (max-width : 600px) {
+                  width: 180px;
+                }
+
             }
             h4 {
                 color: $chukis-green;
