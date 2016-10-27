@@ -13,6 +13,8 @@ $(function() {
 
   let $flipLeft = $('.flip-left');
   let $flipRight = $('.flip-right');
+  let $flipLeftButton = $('.flip-left button');
+  let $flipRightButton = $('.flip-right button');
 
 
   function slide(){
@@ -38,8 +40,8 @@ $(function() {
   $('.menu-display').on('mouseenter', stopSlider).on('mouseleave', startSlider);
 
 // Change Slider to Preview Image
-  $('.preview ul li').on('click', function() {
-    var previewIndex = $('.preview ul li').index($(this));
+  $('.preview li').on('click', function() {
+    var previewIndex = $('.preview li').index($(this));
 
 // Timed Sliding
     $slideContainer.animate({'margin-left': (previewIndex * -100) + 'vw'}, transitionTime, function() {
@@ -50,6 +52,10 @@ $(function() {
 
 // Slide Left
   $flipLeft.on('click', function(){
+    $flipLeftButton.prop('disabled',true);
+    setTimeout(function(){
+      $flipLeftButton.prop('disabled',false);
+    },transitionTime);
     if(currentSlide === 1){
       currentSlide = $slides.length;
       $slideContainer.css('margin-left', (($slides.length - 1) * -100) + 'vw');
@@ -60,14 +66,28 @@ $(function() {
   });
 
 // Slide right
-  $flipRight.on('click', function(){
-    $slideContainer.animate({'margin-left': '-=100vw'}, transitionTime, function() {
-      currentSlide = currentSlide + 1;
-      if (currentSlide === $slides.length) {
-        currentSlide = 1;
-        $slideContainer.css('margin-left', 0);
+let last, diff;
+  $flipRight.on('click', function(e){
+      if (last){
+        diff = e.timeStamp - last;
+        if (diff >= 400){
+          $slideContainer.animate({'margin-left': '-=100vw'}, transitionTime, function() {
+            currentSlide = currentSlide + 1;
+            if (currentSlide === $slides.length) {
+              currentSlide = 1;
+              $slideContainer.css('margin-left', 0);
+            }
+          });
+        }
       }
-    });
+      last = e.timeStamp;
+
+
+    // $flipRightButton.prop('disabled',true);
+    // setTimeout(function(){
+    //   $flipRightButton.prop('disabled',false);
+    // },transitionTime);
+
   });
 
   startSlider();

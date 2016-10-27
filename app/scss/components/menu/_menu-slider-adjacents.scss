@@ -7,11 +7,15 @@
     width: 28px;
     cursor: pointer;
     z-index: 2;
-    span {
+    button {
         color: $chukis-green;
         position: relative;
         top: 35%;
         padding: 0.2em;
+        background: none;
+        border: none;
+        outline-width: 0;
+        cursor: pointer;
     }
 }
 .flip-left {
@@ -26,7 +30,7 @@
 .flip-left:hover,
 .flip-right:hover {
     opacity: 0.75;
-    span {
+    button {
         color: $chukis-green;
     }
 }
