@@ -1,9 +1,15 @@
 .menu-display {
-    overflow: hidden;
     position: relative;
     text-align: center;
     @import "./_menu-slider.scss";
 }
 @import "./_menu-preview.scss";
+@import "./_menu-slider-descriptions-nav.scss";
 @include article-divider;
 @import "./_menu-beverages-and-fillings.scss";
+
+@media screen and (max-width : 480px) {
+  .menu-display{
+    height: 30vh;
+  }
+}

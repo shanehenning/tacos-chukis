@@ -32,5 +32,22 @@
 }
 
 @media screen and (max-width : 480px) {
-
+  .menu-selections{
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+      section{
+        height: auto;
+        h3, p {
+          margin: 1em;
+        }
+        div{
+          float: none;
+          max-width: none;
+          padding: 0;
+          height: 100px;
+          background-size: cover;
+          background-position: center;
+        }
+      }
+  }
 }

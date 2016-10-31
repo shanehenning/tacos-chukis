@@ -1,6 +1,8 @@
 $(document).ready(function() {
   const slider = $('.slides');
   const preview = $('.preview');
+  const descriptionsNav = $('.description-nav ul');
+  const sliq = $('.sliq');
   const flipLeft = $('.flip-left');
   const flipRight = $('.flip-right');
   const dot = $('.dot');
@@ -9,6 +11,7 @@ $(document).ready(function() {
 
   slide();
   asNav();
+  descriptionNavigation();
 
   function slide() {
     slider.slick({
@@ -16,7 +19,7 @@ $(document).ready(function() {
       autoplaySpeed: 8000,
       prevArrow: flipLeft,
       nextArrow: flipRight,
-      asNavFor: preview,
+      asNavFor:  sliq,
       infinite: false,
       responsive: [{
         breakpoint: 768,
@@ -31,11 +34,20 @@ $(document).ready(function() {
   function asNav() {
     preview.slick({
       focusOnSelect: true,
-      asNavFor: slider,
+      asNavFor: sliq,
       prevArrow: miniLeft,
       nextArrow: miniRight,
       infinite: false,
       variableWidth: true
+    });
+  }
+
+  function descriptionNavigation(){
+    descriptionsNav.slick({
+      focusOnSelect: true,
+      asNavFor: sliq,
+      infinite: false,
+      arrows: false
     });
   }
 

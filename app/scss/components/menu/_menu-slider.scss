@@ -1,7 +1,7 @@
 @import "./_menu-slider-adjacents.scss";
 .slider {
+  height: 58.5vh;
     ul {
-        height: 58.5vh;
         padding: 0;
         margin: 0;
         .slide {
@@ -14,4 +14,16 @@
             @import "./_menu-slider-descriptions.scss";
         }
     }
+}
+
+@media screen and (max-width : 480px) {
+  .slider{
+    height: 30vh;
+    ul{
+      height: 30vh;
+      .slide{
+        height: 30vh;
+      }
+    }
+  }
 }

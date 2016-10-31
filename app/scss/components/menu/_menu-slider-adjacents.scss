@@ -27,3 +27,10 @@
 .flip-right:hover {
     opacity: 0.75;
 }
+
+@media screen and (max-width : 480px) {
+  .flip-left,
+  .flip-right {
+    top: 32vh;
+  }
+}

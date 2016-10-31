@@ -18,3 +18,9 @@
         color: $chukis-green;
     }
 }
+
+@media screen and (max-width : 480px) {
+  .featured-item{
+    display: none;
+}
+}
