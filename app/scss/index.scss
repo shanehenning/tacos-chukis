@@ -2,6 +2,10 @@
 @import "./vendor/font-awesome/scss/font-awesome.scss";
 @include normalize();
 
+@import "../scripts/vendor/slick-1.6.0/slick/slick.css";
+@import "../scripts/vendor/slick-1.6.0/slick/slick-theme.css";
+
+
 @import "./utils/_utils.scss";
 @import "./utils/_icons.scss";
 @import "./theme/_theme.scss";
