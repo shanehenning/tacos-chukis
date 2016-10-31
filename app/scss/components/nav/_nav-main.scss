@@ -7,11 +7,9 @@ nav {
     box-shadow: 0 0 1.5em 0.1em black;
     z-index: 3;
     text-align: center;
-    ul {
-        padding: 0;
-    }
-    li,
-    ul {
+    margin: 0;
+    ul, li{
+      padding: 0;
         list-style-type: none;
         color: $light;
         display: inline;
@@ -19,6 +17,7 @@ nav {
         top: -0.6em;
         font-weight: bold;
         font-size: 14pt;
+        cursor: pointer;
         a{
           color: #ebfff1;
           text-decoration: none;
@@ -47,12 +46,10 @@ nav {
         }
         .logo:hover{
           background-image: url("../../app/resources/logo-text-green.svg");
-          cursor: pointer;
         }
         a:hover {
             background-color: $light;
             color: $chukis-green;
-            cursor: pointer;
         }
         a:active {
             background-color: $light;
@@ -63,3 +60,6 @@ nav {
 }
 
 @import "./_nav-mobile.scss";
+#drawer, #drawer-label, .small{
+  display: none;
+}

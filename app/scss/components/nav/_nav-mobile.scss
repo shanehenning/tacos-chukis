@@ -1,7 +1,85 @@
-@media only screen and (max-width : 600px) {
-  nav{
+@media screen and (max-width : 650px) {
+  #drawer{
+    position: absolute;
+    opacity: 0;
+  }
+  #drawer-label{
+    user-select: none;
+    left: 4px;
+    top: 4px;
+    height: 50px;
+    width: 50px;
     display: block;
-    position: relative;
+    position: fixed;
+    background: rgba(255,255,255,.0);
+    z-index: 10;
+  }
+  #drawer-label:before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: .2em;
+    width: 24px;
+    background: $light;
+    left: 13px;
+    top: 18px;
+    box-shadow: 0 9px 0 $light, 0 18px 0 $light;
+  }
+  #drawer:checked ~ #drawer-label,
+  #drawer:checked ~ nav,
+  #drawer:checked ~ main{
+    transform: translateX(150px);
+  }
+    nav {
+        text-align: left;
+        display: block;
+        ul {
+            position: relative;
+            left: -150px;
+            top: 1em;
+            height: 100%;
+            // width: 200px;
+            background-color: $chukis-green;
+            overflow-x: hidden;
+            .logo {
+                display: none;
+            }
+            li {
+              margin: 1em;
+                display: block;
+                a:not(.logo) {
+                    position: relative;
+                    padding: .5em;
+                }
+            }
+        }
 
+    .small {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      width: 100%;
+      top: 0;
+        .logo-mobile {
+            position: absolute;
+            background-image: url("../../app/resources/logo-text-white.svg");
+            display: flex;
+            background-repeat: no-repeat;
+            background-size: 190px;
+            background-position: center;
+            padding: 0;
+            text-align: center;
+            width: 190px;
+            height: 20pt;
+            padding: 1.5em 1em 0.8em;
+            z-index: 10;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+        .logo-mobile:hover {
+            background-image: url("../../app/resources/logo-text-green.svg");
+            background-color: white;
+        }
+    }
   }
 }

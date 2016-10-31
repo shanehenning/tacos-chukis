@@ -7,8 +7,8 @@
 @import "./theme/_theme.scss";
 
 @import "./base/_base.scss";
-@import "./components/_nav.scss";
 
+@import "./components/nav/_nav-main.scss";
 @import "./components/index/_index-main.scss";
 @import "./components/menu/_menu-main.scss";
 @import "./components/about/about-main.scss";
