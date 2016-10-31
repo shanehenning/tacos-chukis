@@ -1,4 +1,4 @@
-.beverages, .fillings {
+.menu-selections {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -29,4 +29,8 @@
             background-size: contain;
         }
     }
+}
+
+@media screen and (max-width : 480px) {
+
 }
