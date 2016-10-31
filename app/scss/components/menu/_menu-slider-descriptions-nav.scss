@@ -1,0 +1,27 @@
+@media screen and (min-width : 480px) {
+    .description-nav {
+        display: none;
+    }
+}
+@media screen and (max-width : 480px) {
+    .description-nav {
+      height: auto;
+      text-align: center;
+      margin: 1em;
+        display: block;
+        position: relative;
+        ul {
+          padding: 0;
+          list-style-type: none;
+            li {
+                h1 {
+                    margin: 0 0 0.25em;
+                    color: $chukis-green;
+                }
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}

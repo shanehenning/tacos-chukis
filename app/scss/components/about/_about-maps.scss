@@ -1,6 +1,13 @@
-#map-capitol-hill, #map-south-lake-union{
-  height: 267px;
-  width: 400px;
-  float: right;
-  display: inline-block;
+#map-capitol-hill,
+#map-south-lake-union {
+    height: 267px;
+    width: 400px;
+    float: right;
+    display: inline-block;
+}
+@media screen and (max-width : 480px) {
+    #map-capitol-hill,
+    #map-south-lake-union {
+        width: 100%;
+    }
 }

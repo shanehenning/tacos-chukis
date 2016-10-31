@@ -1,19 +1,33 @@
-@mixin top-indent{
-  position: relative;
-  top: 3.95em;
+@mixin top-indent {
+    position: relative;
+    top: 3.95em;
 }
-
-@mixin article-divider{
-  .article-divider{
-    width: 100%;
-    display: table;
-    h1, h2 {
-        display: table-cell;
-        vertical-align: middle;
-        height: 2.5em;
-        color: $light;
-        background-color: $chukis-green;
-        text-align: center;
+@mixin article-divider {
+    .article-divider {
+        width: 100%;
+        display: table;
+        background-image: url("../../app/resources/footer-backdrop.jpg");
+        background-size: cover;
+        background-position: center;
+        h1,
+        h2 {
+            display: table-cell;
+            vertical-align: middle;
+            height: 2.5em;
+            color: $light;
+            background-color: $chukis-green;
+            text-align: center;
+            opacity: 0.8;
+        }
     }
-  }
+}
+@media screen and (min-width : 768px) {
+    .article-divider {
+        height: 300px;
+    }
+}
+@media screen and (max-width : 768px) {
+    .article-divider {
+        height: 150px;
+    }
 }

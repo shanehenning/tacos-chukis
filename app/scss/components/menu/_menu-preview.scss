@@ -1,28 +1,72 @@
-.preview {
-    margin-top: 3em;
-    text-align: center;
-    ul {
-        color: $chukis-green;
-        margin: 0;
+.mini-nav {
+    position: relative;
+    margin: 25px auto;
+    width: 80%;
+    max-width: 640px;
+    padding: 0;
+    .preview {
+        margin-left: auto;
+        margin-right: auto;
         padding: 0;
-        margin-bottom: 1em;
-    }
-    ul li {
-        display: inline-block;
-        width: 7.5em;
-        cursor: pointer;
-        img {
-            clear: both;
-            border: 1px solid $light-shadow;
-        }
-        div {
-            display: inline;
+        list-style-type: none;
+        overflow: hidden;
+        height: auto;
+        li {
+            min-width: 150px;
+            max-width: 150px;
+            background-color: $light;
             text-align: center;
+            border: 1px solid $light-shadow;
+            margin: 1em;
+            div {
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 100px;
+                max-height: 100px;
+            }
+            h4 {
+                color: $chukis-green;
+                margin: 1em;
+            }
         }
     }
-    ul li:hover {
-        img {
-            opacity: 0.8;
-        }
+    .fa-chevron-left,
+    .fa-chevron-right {
+        opacity: 0.6;
+        position: relative;
+        top: 59px;
+        margin: 1em;
+        cursor: pointer;
+        color: $chukis-green;
     }
+    .fa-chevron-left {
+        float: left;
+    }
+    .fa-chevron-right {
+        float: right;
+    }
+    .fa-chevron-left:hover,
+    .fa-chevron-right:hover{
+      opacity: 1;
+    }
+}
+
+
+@media screen and (max-width : 768px) {
+  .menu{
+
+  .dot{
+    display: block;
+    height: 25px;
+    top: -25px;
+    position: relative;
+    width: 80%;
+    margin: 1em auto;
+  }
+  .mini-nav{
+    display: none;
+  }
+}
+
 }

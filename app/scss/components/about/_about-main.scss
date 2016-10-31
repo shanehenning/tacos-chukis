@@ -24,5 +24,35 @@
         }
     }
 }
+
+@media screen and (max-width : 480px) {
+  main{
+    top: .95em;
+    padding-top: 2em;
+  }
+  .about-feature{
+    display: none;
+    .about-billboard{
+      display: none;
+    }
+  }
+    .about-content{
+      text-align: center;
+      h2 span{
+        display: none;
+      }
+      h2:after{
+        content: 'HOW A BIKE TRIP BECAME THE BEST TACOS IN SEATTLE';
+      }
+      img{
+        max-width: 100%;
+        min-width: auto;
+      }
+      p{
+        text-align: left;
+      }
+    }
+}
+
 @import "./_about-locations.scss";
 @import "./_about-maps.scss";

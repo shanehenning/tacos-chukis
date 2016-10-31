@@ -2,6 +2,10 @@
 @import "./vendor/font-awesome/scss/font-awesome.scss";
 @include normalize();
 
+@import "../scripts/vendor/slick-1.6.0/slick/slick.css";
+@import "../scripts/vendor/slick-1.6.0/slick/slick-theme.css";
+
+
 @import "./utils/_utils.scss";
 @import "./utils/_icons.scss";
 @import "./theme/_theme.scss";
@@ -12,5 +16,5 @@
 @import "./components/index/_index-main.scss";
 @import "./components/menu/_menu-main.scss";
 @import "./components/about/about-main.scss";
-@import "./components/_press.scss";
+@import "./components/press/_press.scss";
 @import "./components/footer/_footer-main.scss";

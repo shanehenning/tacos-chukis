@@ -1,19 +1,29 @@
 @import "./_menu-slider-adjacents.scss";
 .slider {
-    .slides {
-        width: 800vw;
-        height: 58.5vh;
-        margin: 0;
+  height: 58.5vh;
+    ul {
         padding: 0;
+        margin: 0;
         .slide {
-            float: left;
             list-style-type: none;
             width: 100vw;
             background-size: cover;
             background-position: center;
             height: 58.5vh;
             position: relative;
+            @import "./_menu-slider-descriptions.scss";
         }
     }
-    @import "./_menu-slider-descriptions.scss";
+}
+
+@media screen and (max-width : 480px) {
+  .slider{
+    height: 30vh;
+    ul{
+      height: 30vh;
+      .slide{
+        height: 30vh;
+      }
+    }
+  }
 }

@@ -58,7 +58,11 @@ nav {
         }
     }
 }
+
+@import "./_nav-mobile.scss";
+@media screen and (min-width : 651px) {
+
 #drawer, #drawer-label, .small{
   display: none;
 }
-@import "./components/nav/_nav-mobile.scss";
+}

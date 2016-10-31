@@ -6,7 +6,8 @@
     padding-top: 1.5em;
     padding-bottom: 1.5em;
     section {
-        width: 620px;
+        max-width: 620px;
+        width: calc(100% - 6em);
         background-color: $light;
         text-align: center;
         border: 1px solid $light-shadow;
@@ -26,4 +27,16 @@
             }
         }
     }
+}
+
+@media screen and (max-width : 480px) {
+  .locations{
+    section{
+      .capitol-hill-info,
+      .south-lake-union-info{
+        margin-top: 0%;
+      }
+
+    }
+  }
 }
