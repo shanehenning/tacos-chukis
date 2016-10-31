@@ -2,6 +2,7 @@
   #drawer{
     position: absolute;
     opacity: 0;
+    display: block;
   }
   #drawer-label{
     user-select: none;

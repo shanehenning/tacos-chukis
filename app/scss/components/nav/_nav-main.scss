@@ -60,6 +60,9 @@ nav {
 }
 
 @import "./_nav-mobile.scss";
+@media screen and (min-width : 650px) {
+
 #drawer, #drawer-label, .small{
   display: none;
+}
 }
