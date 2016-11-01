@@ -1,18 +1,66 @@
 .billboard {
-    margin: 0;
-    background-image: url("../../app/resources/billboard.jpg");
-    background-size: cover;
-    background-position: center;
     height: calc(100vh - 3.95em);
     text-align: center;
     position: relative;
+    @import "../components/menu/_menu-slider-adjacents.scss";
+    .flip-left,
+    .flip-right{
+      top: 38vh;
+    }
     img {
-        width: 650px;
-        position: relative;
+        transition: transform 0s ease-in-out;
+        max-width: 650px;
+        width: 70vw;
+        position: absolute;
         top: 16vh;
-        opacity: 0.9;
+        left: 0;
+        transform: none;
+        opacity: 0.65;
         display: block;
         margin: 0 auto;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        z-index: 1;
     }
-    @import "./_blockquote.scss";
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            margin: 0;
+            background-size: cover;
+            background-position: center;
+            height: calc(100vh - 3.95em);
+        }
+    }
+    .dot {
+        position: relative;
+        top: 81vh;
+        // height: 30px;
+        width: 100%;
+    }
+}
+@media screen and (max-width : 768px) {
+    .billboard {
+        height: calc(50vh - 3.95em);
+        .flip-left,
+        .flip-right{
+          top: calc(25vh - 3.95em);
+        }
+        img {
+          max-width: 425px;
+          width: 70vw;
+        }
+        ul{
+          li{
+            height: calc(50vh - 3.95em);
+
+          }
+
+        }
+        .dot{
+          top: calc(51vh - 7.95em);
+        }
+    }
 }

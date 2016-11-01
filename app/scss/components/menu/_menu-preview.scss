@@ -47,26 +47,22 @@
         float: right;
     }
     .fa-chevron-left:hover,
-    .fa-chevron-right:hover{
-      opacity: 1;
+    .fa-chevron-right:hover {
+        opacity: 1;
     }
 }
-
-
-@media screen and (max-width : 768px) {
-  .menu{
-
-  .dot{
-    display: block;
-    height: 25px;
-    top: -25px;
-    position: relative;
-    width: 80%;
-    margin: 1em auto;
-  }
-  .mini-nav{
-    display: none;
-  }
-}
-
+@media screen and (max-width : 769px) {
+    .menu {
+        .dot {
+            display: block;
+            height: 25px;
+            top: -25px;
+            position: relative;
+            width: 80%;
+            margin: 1em auto;
+        }
+        .mini-nav {
+            display: none;
+        }
+    }
 }

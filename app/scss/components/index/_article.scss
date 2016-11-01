@@ -1,6 +1,14 @@
 .tijuana {
-  position: relative;
-    margin: 3em;
+  height: calc(100vh - (9em + 150px));
+  margin: 3em auto;
+  width: 65%;
+  h2{
+    font-size: 24pt;
+    text-align: center;
+    color: $chukis-green;
+    margin: 2em;
+    margin-bottom: 1.5em;
+  }
     img {
         float: left;
         width: 20em;

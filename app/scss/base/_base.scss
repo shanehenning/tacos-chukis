@@ -1,7 +1,7 @@
-*{
-  transition: transform .25s ease-in-out !important;
+body *:not(.slick-track):not(.slick-list)
+{
+  transition: transform .25s ease-in-out;
 }
-
 html, body {
   width: 100%;
   height: 100%;

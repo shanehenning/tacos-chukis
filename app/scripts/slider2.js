@@ -22,7 +22,7 @@ $(document).ready(function() {
       asNavFor:  sliq,
       infinite: false,
       responsive: [{
-        breakpoint: 768,
+        breakpoint: 769,
         settings: {
           dots: true,
           appendDots: dot

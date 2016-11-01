@@ -1,58 +1,61 @@
-.about-feature {
-    .about-billboard {
-        background-image: url('../../app/resources/location.jpg');
-        background-size: cover;
-        background-position: center;
-        width: 98.9.5vw;
-        height: 65vh;
-    }
-}
-.about-content {
-    position: relative;
-    margin: 3em;
-    h2 {
-        color: $chukis-green;
-    }
-    img {
-        float: left;
-        max-width: 40%;
-        min-width: 400px;
-        margin-right: 3em;
-        margin-bottom: 1.75em;
-        @media only screen and (min-width : 1350px) {
-            margin-bottom: 3em;
+.about {
+    @include top-indent;
+    .about-feature {
+        .about-billboard {
+            background-image: url('../../app/resources/location.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 98.9.5vw;
+            height: 65vh;
         }
     }
-}
-
-@media screen and (max-width : 480px) {
-  main{
-    top: .95em;
-    padding-top: 2em;
-  }
-  .about-feature{
-    display: none;
-    .about-billboard{
-      display: none;
+    .about-content {
+        position: relative;
+        margin: 3em;
+        h2 {
+            color: $chukis-green;
+        }
+        img {
+            float: left;
+            max-width: 40%;
+            min-width: 400px;
+            margin-right: 3em;
+            margin-bottom: 1.75em;
+            @media only screen and (min-width : 1350px) {
+                margin-bottom: 3em;
+            }
+        }
     }
-  }
-    .about-content{
-      text-align: center;
-      h2 span{
-        display: none;
-      }
-      h2:after{
-        content: 'HOW A BIKE TRIP BECAME THE BEST TACOS IN SEATTLE';
-      }
-      img{
-        max-width: 100%;
-        min-width: auto;
-      }
-      p{
-        text-align: left;
-      }
-    }
-}
+    @import "./_about-locations.scss";
+    @import "./_about-maps.scss";
 
-@import "./_about-locations.scss";
-@import "./_about-maps.scss";
+  }
+    @media screen and (max-width : 769px) {
+        .about {
+            top: 0.95em;
+            padding-top: 2em;
+
+        .about-feature {
+            display: none;
+            .about-billboard {
+                display: none;
+            }
+        }
+        .about-content {
+            text-align: center;
+            h2 span {
+                display: none;
+            }
+            h2:after {
+                content: 'HOW A BIKE TRIP BECAME THE BEST TACOS IN SEATTLE';
+            }
+            img {
+                max-width: 100%;
+                min-width: auto;
+            }
+            p {
+                text-align: left;
+            }
+        }
+  }
+  }
