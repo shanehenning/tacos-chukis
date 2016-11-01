@@ -1,5 +1,6 @@
-main {
-    @include top-indent;
+.index {
+  @include top-indent;
     @import "./_billboard.scss";
+    @import "./_index-see-menu.scss";
     @import "./_article.scss";
 }

@@ -11,13 +11,14 @@
         background-position: center;
         h1,
         h2 {
+          font-size: 24pt;
             display: table-cell;
             vertical-align: middle;
             height: 2.5em;
             color: $light;
             background-color: $chukis-green;
             text-align: center;
-            opacity: 0.8;
+            opacity: 0.75;
         }
     }
 }

@@ -1,0 +1,28 @@
+.index-menu{
+  height: calc(100vh - (9em + 150px));
+  padding: 3em;
+  margin: 0 auto;
+  width: 65%;
+  h2{
+    font-size: 30pt;
+    text-align: center;
+    color: $chukis-green;
+    margin: 1.5em;
+    margin-bottom: 1em;
+  }
+  img{
+    float: left;
+    clear: both;
+
+    width: 200px;
+    height: 200px;
+
+    max-width: 40%;
+    min-width: 400px;
+    margin-right: 3em;
+    margin-bottom: 1.75em;
+    @media only screen and (min-width : 1350px) {
+        margin-bottom: 3em;
+    }
+  }
+}

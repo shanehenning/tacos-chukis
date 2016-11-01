@@ -16,35 +16,50 @@
   <label for="drawer" id="drawer-label"></label>
   <nav>
     <ul>
-        <li><a href="index.html">HOME</a></li><!--
-      --><li><a href="menu.html">MENU</a></li><!--
-      --><li><a class="logo" href="index.html"></a></li><!--
-      --><li><a href="about.html">ABOUT</a></li><!--
-      --><li><a href="press.html">PRESS</a></li>
+      <li><a href="index.html">HOME</a></li>
+      <!--
+      -->
+      <li><a href="menu.html">MENU</a></li>
+      <!--
+      -->
+      <li>
+        <a class="logo" href="index.html"></a>
+      </li>
+      <!--
+      -->
+      <li><a href="about.html">ABOUT</a></li>
+      <!--
+      -->
+      <li><a href="press.html">PRESS</a></li>
     </ul>
     <div class="small">
       <a class="logo-mobile" href="index.html"></a>
     </div>
   </nav>
-  <main>
-    <figure class="billboard">
-      <img src="../app/resources/logo-full-white.svg" alt="Tacos Chukis Logo" />
-      <blockquote>
-          <span class="quote">
-            SEATTLE PEOPLE, LOOK NO FURTHER, THIS IS WHERE ALL OF YOUR TACO NEEDS WILL BE FULFILLED.
-            <br/>
-          </span>
-          <cite>
-            ADRIENNE S.  -  YELP
-          </cite>
-      </blockquote>
-        <br/>
-    </figure>
+  <main class="index">
+    <div class="billboard">
+      <div class="flip-left">
+        <icon class="icon fa-chevron-left"></icon>
+      </div>
+      <div class="flip-right">
+        <icon class="icon fa-chevron-left"></icon>
+      </div>
+      <img class="logo-full" src="../app/resources/logo-full-white.svg" alt="Tacos Chukis Logo" />
+      <ul class="slides">
+        <li style="background-image: url('../app/resources/index-single.jpg')"></li>
+        <li style="background-image: url('../app/resources/index-five-tacos.jpg')"></li>
+        <li style="background-image: url('../app/resources/index-two-tacos.jpg')"></li>
+        <li style="background-image: url('../app/resources/index-taco-burrito.jpg')"></li>
+        <li style="background-image: url('../app/resources/index-three-tacos.jpg')"></li>
+        <li style="background-image: url('../app/resources/index-house-taco.jpg')"></li>
+      </ul>
+      <div class="dot">
+      </div>
+    </div>
     <article class="tijuana">
+      <h2>A TACO LOVE STORY, SEPARATED BY 1,700 MILES.</h2>
         <img src="../app/resources/succulent.jpg" alt="A house taco with pineapple on top" />
       <div class="storyline">
-
-      <h3>A TACO LOVE STORY, SEPARATED BY 1,700 MILES.</h3>
       <br/>
       <p>
         A broke student, recently graduated from UW and with no job prospects to speak of, bought a bicycle and rode it 1,700 miles down the coast to visit his hometown of Tijuana.
@@ -57,8 +72,24 @@
       </p>
     </div>
     </article>
-    <div id="map">
+    <div class="article-divider" style="background-image: url('../app/resources/entree-fillings.jpg')">
+      <h2>AUTHENTIC MEXICAN CANTINA STYLE FOOD</h2>
     </div>
+    <article class="index-menu">
+      <img src="../app/resources/index-single.jpg" alt="House Taco" />
+      <img src="../app/resources/nopal-asado-preview.jpg" alt="House Taco" />
+      <p>
+        From rotisserie-roasted adobada pork to grilled prickly pear cactus leaves, with a generous garnish of guacamole and maybe topped with a chunk of grilled pineapple, Tacos Chukis offers authentic Mexican cantina fare.
+      </p>
+      <!-- <p>
+      a Mexico City staple stuffed with rotisserie-roasted adobada
+      pork and a slice of pineapple on a warm corn tortilla, and nopales,
+      diced and grilled prickly pear cactus leaves that serve as a
+      vegetarian stand-in for the menu’s meaty items.
+      Prices are low—regular tacos are $1.60—but the vegetables and the
+      meat are high quality and cooked fresh.
+    </p> -->
+    </article>
     <footer>
       <div class="footer-overlay">
         <section class="social">
@@ -67,10 +98,18 @@
             Check out the awesome things that awesome people are saying about us!
           </p>
           <ul>
-            <li><a class="fa fa-facebook" href="https://www.facebook.com/TacosChukis/"></a></li>
-            <li><a class="fa fa-twitter" href="https://twitter.com/tacoschukis"></a></li>
-            <li><a class="fa fa-instagram" href="https://www.instagram.com/tacoschukis/"></a></li>
-            <li><a class="fa fa-yelp" href="https://www.yelp.com/biz/tacos-chukis-seattle"></a></li>
+            <li>
+              <a class="fa fa-facebook" href="https://www.facebook.com/TacosChukis/"></a>
+            </li>
+            <li>
+              <a class="fa fa-twitter" href="https://twitter.com/tacoschukis"></a>
+            </li>
+            <li>
+              <a class="fa fa-instagram" href="https://www.instagram.com/tacoschukis/"></a>
+            </li>
+            <li>
+              <a class="fa fa-yelp" href="https://www.yelp.com/biz/tacos-chukis-seattle"></a>
+            </li>
           </ul>
         </section>
         <section class="contact">
@@ -79,13 +118,17 @@
           </div>
           <ul>
             <div>
-              <span class="icon fa-map-marker"></span><li> 219 Broadway E<br/>Seattle, WA 98102</li>
+              <span class="icon fa-map-marker"></span>
+              <li> 219 Broadway E
+                <br/>Seattle, WA 98102</li>
             </div>
             <div>
-              <span class="icon fa-phone"></span><li> (206) 328-4447</li>
+              <span class="icon fa-phone"></span>
+              <li> (206) 328-4447</li>
             </div>
             <div>
-              <span class="icon fa-envelope-o"></span><li> info@tacoschukis.com</li>
+              <span class="icon fa-envelope-o"></span>
+              <li> info@tacoschukis.com</li>
             </div>
           </ul>
         </section>
@@ -105,4 +148,7 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="../app/scripts/app.js"></script>
+<script src="../app/scripts/vendor/slick-1.6.0/slick/slick.min.js"></script>
+<script src="../app/scripts/slider-index.js"></script>
+
 </html>
