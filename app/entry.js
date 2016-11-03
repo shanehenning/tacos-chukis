@@ -1,6 +1,5 @@
 'use strict';
 
-require('./scripts/vendor/jquery-3.1.1.min.js');
 require('./scripts/vendor/slick-1.6.0/slick/slick.min.js');
 require('./scripts/slider-index.js');
 require('./scripts/slider-menu.js');
