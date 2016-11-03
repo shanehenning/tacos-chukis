@@ -6,7 +6,7 @@ module.exports = exports = function(){$(document).ready(function() {
 
   slide();
 
-  function slide() {
+  function slide() { 
     slider.slick({
       autoplay: true,
       autoplaySpeed: 8000,
