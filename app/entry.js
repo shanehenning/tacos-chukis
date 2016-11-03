@@ -1,10 +1,6 @@
 'use strict';
 
-require('./scripts/vendor/slick-1.6.0/slick/slick.min.js');
-require('./scripts/slider-index.js');
-require('./scripts/slider-menu.js');
-require('./scripts/slider-press.js');
-require('./scripts/maps.js');
+require('./scripts/index.js');
 require('!!file?name=[name].[ext]!./html/index.html');
 require('./scss/index.scss');
 
