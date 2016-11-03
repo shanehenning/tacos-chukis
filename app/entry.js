@@ -6,3 +6,4 @@ require('./scss/index.scss');
 require('!!file?name=[name].[ext]!./html/menu.html');
 require('!!file?name=[name].[ext]!./html/about.html');
 require('!!file?name=[name].[ext]!./html/press.html');
+require('!!file?name=[name].[ext]!./scripts/index.js');
