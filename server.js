@@ -1,5 +1,7 @@
 var express = require('express');
 
-express().use(express.static('./build')).listen(8080, function() {
-  console.log('Demo app listening on port 8080!');
+const port = process.env.PORT || 8080;
+
+express().use(express.static('./build')).listen(port, function() {
+  console.log('Demo app listening on port ' + port + '!');
 });
