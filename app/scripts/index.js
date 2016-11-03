@@ -6,6 +6,6 @@ module.exports = function() {
   require('./slider.js');
   require('./slider-index.js');
   require('./slider-menu.js');
-  require('./map.js');
+  require('./maps.js');
   require('./slider-press.js');
 };
