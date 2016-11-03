@@ -26,3 +26,13 @@ h1, h2, h3, h4, h5, h6, a{
 p{
   font-family: $font-body;
 }
+
+a{
+  color: $chukis-green;
+}
+a:hover{
+  color: $chukis-green-hover;
+}
+a:active{
+  color: $chukis-green-active;
+}

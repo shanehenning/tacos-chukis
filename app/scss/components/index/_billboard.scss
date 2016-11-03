@@ -4,8 +4,8 @@
     position: relative;
     @import "../components/menu/_menu-slider-adjacents.scss";
     .flip-left,
-    .flip-right{
-      top: 38vh;
+    .flip-right {
+        top: 38vh;
     }
     img {
         transition: transform 0s ease-in-out;
@@ -36,31 +36,26 @@
     }
     .dot {
         position: relative;
-        top: 81vh;
-        // height: 30px;
+        bottom: 7vh;
         width: 100%;
+        ul li {
+            height: 20px;
+        }
     }
 }
 @media screen and (max-width : 768px) {
     .billboard {
         height: calc(50vh - 3.95em);
         .flip-left,
-        .flip-right{
-          top: calc(25vh - 3.95em);
+        .flip-right {
+            top: calc(25vh - 3.95em);
         }
         img {
-          max-width: 425px;
-          width: 70vw;
+            max-width: 425px;
+            width: 70vw;
         }
-        ul{
-          li{
+        ul li {
             height: calc(50vh - 3.95em);
-
-          }
-
-        }
-        .dot{
-          top: calc(51vh - 7.95em);
         }
     }
 }

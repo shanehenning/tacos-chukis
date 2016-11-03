@@ -1,6 +1,8 @@
 $(document).ready(function() {
   const slider = $('.slides');
-  const dot = $('.dot');
+  const dot = $('.press .billboard .dot');
+  const flipLeft = $('.fa-chevron-circle-left');
+  const flipRight = $('.fa-chevron-circle-right');
 
   slide();
 
@@ -9,8 +11,16 @@ $(document).ready(function() {
       autoplay: true,
       autoplaySpeed: 8000,
       infinite: true,
-      dots: true,
-      appendDots: dot
+      prevArrow: flipLeft,
+      nextArrow: flipRight,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          dots: true,
+          appendDots: dot,
+          dotsClass: 'slick-dots-white'
+        }
+      }]
     });
   }
 

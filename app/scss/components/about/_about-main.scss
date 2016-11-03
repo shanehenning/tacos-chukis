@@ -7,6 +7,8 @@
             background-position: center;
             width: 98.9.5vw;
             height: 65vh;
+            position: relative;
+            @import "../menu/_menu-slider-descriptions.scss";
         }
     }
     .about-content {

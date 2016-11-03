@@ -1,0 +1,34 @@
+.slides {
+    list-style-type: none;
+    width: calc(90% - 4em);
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0;
+    li {
+        blockquote {
+            margin: 0 auto;
+            text-align: center;
+            .quote {
+                font-family: $font-body;
+                font-size: 18pt;
+            }
+            cite {
+                font-family: $font-body;
+                float: right;
+                margin-right: 1em;
+                font-size: 10pt;
+            }
+        }
+    }
+}
+@media screen and (max-width : 767px) {
+.slides{
+  li{
+    blockquote{
+      .quote{
+        font-size: 14pt;
+      }
+    }
+  }
+}
+}

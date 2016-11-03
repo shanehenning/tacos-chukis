@@ -1,0 +1,37 @@
+.with-arrows {
+    width: calc(90% - 6em);
+    max-width: 900px;
+    margin: 0 auto;
+    .fa-chevron-circle-left,
+    .fa-chevron-circle-right {
+        font-size: 18pt;
+        margin-top: 0.25em;
+        position: relative;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    .fa-chevron-circle-left {
+        float: left;
+    }
+    .fa-chevron-circle-right {
+        float: right;
+    }
+    .fa-chevron-circle-left:hover,
+    .fa-chevron-circle-right:hover {
+        opacity: 1;
+    }
+    @import "./_press-slider.scss";
+}
+@media screen and (max-width : 767px) {
+  .with-arrows{
+    width: 100%;
+  }
+    .fa-chevron-circle-left:before,
+    .fa-chevron-circle-right:before {
+        display: none;
+    }
+    .dot {
+        position: relative;
+        bottom: -1em;
+    }
+}

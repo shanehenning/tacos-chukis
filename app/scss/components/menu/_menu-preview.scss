@@ -1,8 +1,8 @@
 .mini-nav {
     position: relative;
-    margin: 25px auto;
-    width: 80%;
-    max-width: 628px;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 87%;
     padding: 0;
     .preview {
         margin-left: auto;
@@ -17,7 +17,7 @@
             background-color: $light;
             text-align: center;
             border: 1px solid $light-shadow;
-            margin: 1em;
+            margin: 1.5em 5px 1.5em 5px;
             div {
                 background-position: center;
                 background-size: cover;

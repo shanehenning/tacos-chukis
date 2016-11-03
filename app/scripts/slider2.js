@@ -19,7 +19,7 @@ $(document).ready(function() {
       autoplaySpeed: 8000,
       prevArrow: flipLeft,
       nextArrow: flipRight,
-      asNavFor:  sliq,
+      asNavFor: sliq,
       infinite: false,
       responsive: [{
         breakpoint: 769,
@@ -38,11 +38,33 @@ $(document).ready(function() {
       prevArrow: miniLeft,
       nextArrow: miniRight,
       infinite: false,
-      variableWidth: true
+      slidesToShow: 6.99,
+      responsive: [{
+        breakpoint: 1430,
+        settings: {
+          slidesToShow: 6
+        }
+      },{
+        breakpoint: 1300,
+        settings: {
+          slidesToShow: 5
+        }
+      },
+      {
+        breakpoint: 1075,
+        settings: {
+          slidesToShow: 4
+        }
+      }, {
+        breakpoint: 885,
+        settings: {
+          slidesToShow: 3
+        }
+      }]
     });
   }
 
-  function descriptionNavigation(){
+  function descriptionNavigation() {
     descriptionsNav.slick({
       focusOnSelect: true,
       asNavFor: sliq,
