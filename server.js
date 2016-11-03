@@ -8,5 +8,5 @@ app.use(express.static('./build')).listen(port, function() {
 });
 
 app.get('*', function(req, res) {
-  res.sendFile(`${__dirname}/build/index.html`);
+  res.sendFile(`${__dirname}/index.html`);
 });
