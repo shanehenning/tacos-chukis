@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function() {
+module.exports = exports = function() {
   require('./vendor/jquery-3.1.1.min.js');
   require('./vendor/slick-1.6.0/slick/slick.min.js');
   require('./slider.js');
