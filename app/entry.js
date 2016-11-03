@@ -6,6 +6,8 @@ require('!!file?name=[name].[ext]!./scripts/slider-menu.js');
 require('!!file?name=[name].[ext]!./scripts/slider-press.js');
 require('!!file?name=[name].[ext]!./scripts/maps.js');
 require('!!file?name=[name].[ext]!./html/index.html');
+require('./scripts/vendor/slick-1.6.0/slick/slick.min.js');
+require('./scripts/slider-index.js');
 require('./scss/index.scss');
 
 require('!!file?name=[name].[ext]!./html/menu.html');
