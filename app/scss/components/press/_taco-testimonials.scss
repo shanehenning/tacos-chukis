@@ -1,0 +1,57 @@
+.billboard {
+    min-width: 550px;
+    padding-top: 6em;
+    color: $light;
+    background-color: $dark;
+    height: 65vh;
+    width: 100%;
+    position: relative;
+    h2 {
+        position: relative;
+        text-align: center;
+        font-size: 32pt;
+        margin-bottom: 0;
+    }
+    h4 {
+        font-size: 24pt;
+        text-align: center;
+        margin: 0.5em 1em 1em;
+        font-family: $font-body;
+        font-style: italic;
+    }
+    h6 {
+        margin: 3em auto;
+        width: 7em;
+        height: 0.25em;
+        background-color: $light;
+    }
+    .fa-commenting {
+        font-size: 32pt;
+        text-align: center;
+    }
+    .fa-commenting:before {
+        margin: 0;
+    }
+    @import "./_press-slider-adjacents.scss";
+    @media screen and (max-width : 767px) {
+      // .billboard
+        height: auto;
+        padding-top: 5em;
+        padding-bottom: 4em;
+        min-width: auto;
+        h2 {
+          display: none;
+        }
+        h4{
+          text-transform: uppercase;
+          font-family: $font-title;
+          font-style: normal;
+          font-size: 20pt;
+        }
+        .fa-commenting{
+          margin: .5em auto;
+          margin-bottom: 1em;
+          font-size: 24pt;
+        }
+    }
+}
