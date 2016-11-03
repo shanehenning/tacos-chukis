@@ -1,7 +1,8 @@
 .press {
     @include top-indent;
-    @import "../components/menu/_menu-slider-adjacents.scss";
-    @import "../components/menu/_menu-slider.scss";
+    @import "../components/index/_billboard.scss";
+    // @import "../components/menu/_menu-slider-adjacents.scss";
+    // @import "../components/menu/_menu-slider.scss";
     .slider {
         overflow: hidden;
         .slides {

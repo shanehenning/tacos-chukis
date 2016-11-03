@@ -8,3 +8,14 @@
     transform: translate(0, 0);
     margin-right: .5em;
 }
+
+.arrow-right-icon::after{
+  content: '';
+   font-family: FontAwesome;
+   font-weight: normal;
+   font-style: normal;
+   margin: 0 auto;
+   margin-left: .75em;
+   vertical-align: bottom;
+   text-decoration:none;
+}

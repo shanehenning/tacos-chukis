@@ -3,4 +3,18 @@
     @import "./_billboard.scss";
     @import "./_index-see-menu.scss";
     @import "./_article.scss";
+    .feature-divider{
+      height: 450px;
+      .break{
+        display: none;
+      }
+    }
+    @media screen and (max-width : 650px) {
+      .feature-divider{
+        height: 250px;
+        .break{
+          display: inline;
+        }
+      }
+    }
 }

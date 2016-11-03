@@ -1,29 +1,83 @@
 .tijuana {
-  height: calc(100vh - (9em + 150px));
-  margin: 3em auto;
-  width: 65%;
-  h2{
-    font-size: 24pt;
-    text-align: center;
-    color: $chukis-green;
-    margin: 2em;
-    margin-bottom: 1.5em;
-  }
+  height: calc(360px + 0em);
+    margin: 3em auto;
+    max-width: 685px;
+    width: 95%;
     img {
-        float: left;
-        width: 20em;
-        // margin-bottom: 100%;
+      float: left;
+      width: 300px;
+      height: 360px;
+      margin-right: 3em;
+      margin-left: 1em;
+    }
+    .storyline {
+      width: 320px;
+      height: 350px;
+      float: left;
+        h2 {
+            font-size: 24pt;
+            color: $chukis-green;
+            margin:0;
+        }
+        h4 {
+            color: $chukis-green;
+            margin: 0.5em 0 .5em 0;
+            position: relative;
+        }
+        h6{
+          width: 5em;
+          height: .25em;
+          margin: 2em 0 2em 0;
+          background-color: $chukis-green;
+        }
+        a{
+          h5{
+            display: inline-block;
+            margin: 0;
+          }
+          text-decoration: none;
+          color: $chukis-green;
+        }
+        a:hover{
+          color: $chukis-green-hover;
+        }
+        a:active{
+          color: $chukis-green-active;
+        }
+    }
+}
+@media screen and (max-width : 767px) {
+  .tijuana{
+    height: auto;
+    text-align: center;
+    width: calc(100% - 4em);
+    img{
+      display: none;
+      width: calc(100% - 6em);
+      margin-bottom: 3em;
+      float: none;
+      height: auto;
+      margin: 0;
     }
     .storyline{
-        position: relative;
-        top: 2.25vw;
-        left: 3em;
-        margin-right: 3em;
-        h2 {
-            color: $chukis-green;
-        }
-        p{
-          margin: 0;
-        }
+      float: none;
+      width: auto;
+      height: auto;
+      h2{
+        font-size: 20pt;
+        margin-top: 1em;
+      }
+      h4{
+        font-size:12pt;
+      }
+      h6{
+        margin: 2em auto;
+      }
+      p{
+        text-align: left;
+        width: 100%;
+
+      }
     }
+  }
 }
