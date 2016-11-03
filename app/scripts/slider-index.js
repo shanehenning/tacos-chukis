@@ -1,4 +1,4 @@
-$(document).ready(function() {
+module.exports = exports = function(){$(document).ready(function() {
   const slider = $('.slides');
   const dot = $('.index .billboard .dot');
   const flipLeft = $('.flip-left');
@@ -27,3 +27,4 @@ $(document).ready(function() {
     $('.slides').slick('resize');
   });
 });
+};
