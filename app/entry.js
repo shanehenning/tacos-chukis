@@ -1,7 +1,7 @@
 'use strict';
 
-require('!!file?name=[name].[ext]!./html/index.html');
 require('./scripts/index.js');
+require('!!file?name=[name].[ext]!./html/index.html');
 require('./scss/index.scss');
 
 require('!!file?name=[name].[ext]!./html/menu.html');
