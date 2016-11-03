@@ -1,6 +1,6 @@
 'use strict';
 
-require('./scripts/index.js');
+require('script!./scripts/index.js');
 require('!!file?name=[name].[ext]!./html/index.html');
 require('./scss/index.scss');
 
