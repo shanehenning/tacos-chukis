@@ -20,7 +20,7 @@ var plugins = [
   }),
   new CopyWebpackPlugin([
     {
-      from: './app/resources'
+      from: 'app/resources'
     }
   ])
 ];
