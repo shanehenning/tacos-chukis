@@ -20,7 +20,16 @@ var plugins = [
   }),
   new CopyWebpackPlugin([
     {
-      from: 'app/resources'
+      from: 'app/resources/*'
+    },
+    {
+      from: 'app/scripts/*'
+    },
+    {
+      from: 'app/scripts/vendor/jquery-3.1.1.min.js'
+    },
+    {
+      from: 'app/scripts/vendor/slick-1.6.0/slick/slick.min.js'
     }
   ])
 ];
