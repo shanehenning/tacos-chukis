@@ -43,7 +43,7 @@
         }
     }
 }
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 550px) {
     .billboard {
         height: calc(50vh - 3.95em);
         .flip-left,
@@ -53,6 +53,7 @@
         img {
             max-width: 425px;
             width: 70vw;
+            max-height: 60%;
         }
         ul li {
             height: calc(50vh - 3.95em);

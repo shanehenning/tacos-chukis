@@ -10,7 +10,7 @@
 @import "./_menu-slider-descriptions-nav.scss";
 @include article-divider;
 @import "./_menu-beverages-and-fillings.scss";
-@media screen and (max-width : 480px) {
+@media screen and (max-width : 767px) {
     .menu {
         .menu-display {
             height: 30vh;
