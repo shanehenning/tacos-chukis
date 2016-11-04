@@ -5,6 +5,8 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const CleanPlugin = require('clean-webpack-plugin');
 const ExtractText = require('extract-text-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const path = require('path');
 
 // module constants
 const production = process.env.NODE_ENV === 'production';
@@ -15,7 +17,12 @@ var plugins = [
   new ExtractText('bundle.css'),
   new webpack.DefinePlugin({
     __API_URL__: JSON.stringify(apiURL)
-  })
+  }),
+  new CopyWebpackPlugin([
+    {
+      from: './app/resources'
+    }
+  ])
 ];
 
 if (production){
@@ -31,6 +38,7 @@ if (production){
 }
 
 module.exports = {
+  context: path.join(__dirname, 'app'),
   entry: `${__dirname}/app/entry.js`,
   debug: !production,
   devtool: production ? false : 'eval',
