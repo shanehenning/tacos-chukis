@@ -26,10 +26,10 @@ var plugins = [
       from: 'scripts/*'
     },
     {
-      from: 'scripts/vendor/jquery-3.1.1.min.js'
+      from: 'scripts/vendor/jquery-3.1.1.min.js', to: 'scripts'
     },
     {
-      from: 'scripts/vendor/slick-1.6.0/slick/slick.min.js'
+      from: 'scripts/vendor/slick-1.6.0/slick/slick.min.js', to: 'scripts/slick.min.js' 
     }
   ])
 ];
