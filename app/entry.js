@@ -1,6 +1,5 @@
 'use strict';
 
-require('./scripts/slider-index.js');
 require('!!file?name=[name].[ext]!./html/index.html');
 require('./scss/index.scss');
 

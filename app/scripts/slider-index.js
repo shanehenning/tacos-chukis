@@ -1,4 +1,4 @@
-module.exports = exports = function(){$(document).ready(function() {
+$(document).ready(function() {
   const slider = $('.slides');
   const dot = $('.index .billboard .dot');
   const flipLeft = $('.flip-left');
@@ -6,7 +6,7 @@ module.exports = exports = function(){$(document).ready(function() {
 
   slide();
 
-  function slide() { 
+  function slide() {
     slider.slick({
       autoplay: true,
       autoplaySpeed: 8000,
@@ -27,4 +27,3 @@ module.exports = exports = function(){$(document).ready(function() {
     $('.slides').slick('resize');
   });
 });
-};
