@@ -28,9 +28,9 @@
     opacity: 0.75;
 }
 
-@media screen and (max-width : 480px) {
+@media screen and (max-width : 767px) {
   .flip-left,
   .flip-right {
-    top: 32vh;
+    top: 12vh;
   }
 }

@@ -14,10 +14,12 @@ footer {
         font-size: 9pt;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
     footer {
         background-position: -20em;
         background-repeat: no-repeat;
+        height: auto;
+        width: 100%;
         .footer-overlay {
             justify-content: center;
             .contact,
