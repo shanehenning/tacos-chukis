@@ -1,6 +1,6 @@
 'use strict';
 
-const key = 'AIzaSyCi154L2uw_QTf_m0GycTQeMxxMxNd_Az4';
+// const key = 'AIzaSyCi154L2uw_QTf_m0GycTQeMxxMxNd_Az4';
 
 let mapCapitolHill, markerCapitolHill, infoWindowCapitolHill, mapSouthLakeUnion, markerSouthLakeUnion, infoWindowSouthLakeUnion;
 let capitolHillLocation = {
@@ -52,5 +52,9 @@ function initMaps() {
 }
 
 $(window).ready(function() {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCi154L2uw_QTf_m0GycTQeMxxMxNd_Az4&callback=initMaps';
+  document.body.appendChild(script);
   initMaps();
 });
