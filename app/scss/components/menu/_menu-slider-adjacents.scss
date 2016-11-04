@@ -34,3 +34,10 @@
     top: 12vh;
   }
 }
+
+@media screen and (max-width : 480px) {
+  .flip-left,
+  .flip-right {
+    top: 14vh;
+  }
+}
